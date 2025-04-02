@@ -3,9 +3,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { User } from "lucide-react";
 export function Header() {
     return (
-        <header className="shadow-xl font-bangla z-50">
-            <div className="mx-auto px-10 py-6 max-w-[90%]">
-                <div className="grid grid-cols-5 gap-4">
+        <header className="flex sticky top-0 z-50 w-full items-center border-b bg-background shadow-xl font-bangla">
+            <div className="flex h-[--header-height] w-full items-center gap-2 px-4">
+                <div className="grid grid-cols-5 gap-4 w-[95%] mx-auto">
                     <div className="col-span-1 border-r border-gray-200"></div>
                     <div className="col-span-3 flex flex-col justify-center py-2">
                         <p className="text-2xl font-bold">Hi, Brou</p>

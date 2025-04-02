@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Anek_Bangla, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/layouts/header";
 const anekBangla = Anek_Bangla({
   variable: "--font-anek-bangla",
   subsets: ["latin"],
@@ -32,7 +31,6 @@ export default function RootLayout({
       <body
         className={`${anekBangla.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
         {children}
       </body>
     </html>
